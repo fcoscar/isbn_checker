@@ -1,8 +1,9 @@
 def valid_isbn(number):
     if len(number) != 10 or len(number) !=13:
-        return False
+        return True
 
 def isbn10_checker(number):
+    number = number.replace("-","")
     count = 1
     total = 0
     if valid_isbn(number):
@@ -14,6 +15,7 @@ def isbn10_checker(number):
         return False
 
 def isbn13_checker(number):
+    number = number.replace("-","")
     count = 0
     total = 0
     if valid_isbn(number):

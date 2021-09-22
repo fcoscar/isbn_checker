@@ -5,7 +5,7 @@ from main import isbn10_checker, isbn13_checker
 
 class MyTestCase(unittest.TestCase):
     def test_isbn10(self):
-        test = isbn10_checker("0716703440")
+        test = isbn10_checker("0-7167-0344-0")
         self.assertEqual(True, test)  # add assertion here
 
     def test_isbn13(self):
