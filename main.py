@@ -19,7 +19,7 @@ def isbn13_checker(number):
     count = 0
     total = 0
     if valid_isbn(number):
-        for i in range(len(number) - 1 ,-1,-1):
+        for i in range(len(number) - 1,-1,-1):
             if count == 1:
                 count = 3
             else:
